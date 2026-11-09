@@ -1,0 +1,29 @@
+{
+    "thesis_project": "HealthPal - Selective Food Recognition Benchmark",
+    "checkpoint_info": {
+        "model_name": "YOLOv8-based Food Detector",
+        "checkpoint_path": "checkpoints/baseline_yolov8.pt",
+        "checksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "target_classes": [
+        "banh_mi",
+        "banh_trang_tron",
+        "banh_xeo",
+        "bun_bo_hue",
+        "bun_dau",
+        "com_tam",
+        "goi_cuon",
+        "pho",
+        "hu_tieu",
+        "xoi"
+    ],
+    "policy_thresholds": {
+        "floor_threshold": 0.25,
+        "p1_confidence_threshold": 0.65,
+        "p2_luminance_iou_threshold": 0.75
+    },
+    "evaluation_datasets": {
+        "known_test_size": 100,
+        "ood_test_size": 100
+    }
+}
